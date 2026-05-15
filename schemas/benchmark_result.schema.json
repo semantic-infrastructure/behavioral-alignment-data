@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/semantic-infrastructure/behavioral-alignment-data/main/schemas/benchmark_result.schema.json",
+  "title": "Benchmark Result",
+  "description": "Machine-readable benchmark result structure for behavioral alignment evaluation.",
+  "type": "object",
+  "required": [
+    "result_id",
+    "benchmark_id",
+    "system_id",
+    "evaluation_date",
+    "scores"
+  ],
+  "properties": {
+    "result_id": {
+      "type": "string",
+      "description": "Unique identifier for the benchmark result.",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "benchmark_id": {
+      "type": "string",
+      "description": "Identifier of the benchmark or evaluation scenario.",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "system_id": {
+      "type": "string",
+      "description": "Identifier of the evaluated conversational system or model."
+    },
+    "evaluation_date": {
+      "type": "string",
+      "description": "Date of the benchmark evaluation.",
+      "format": "date"
+    },
+    "scores": {
+      "type": "object",
+      "description": "Category-level evaluation scores.",
+      "required": [
+        "semantic_consistency",
+        "contextual_robustness",
+        "behavioral_stability",
+        "bias_handling",
+        "interactional_alignment",
+        "epistemic_stability"
+      ],
+      "properties": {
+        "semantic_consistency": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "contextual_robustness": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "behavioral_stability": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "bias_handling": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "interactional_alignment": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "epistemic_stability": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "additionalProperties": false
+    },
+    "overall_score": {
+      "type": "number",
+      "description": "Optional aggregate benchmark score.",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "failure_modes": {
+      "type": "array",
+      "description": "Observed conversational failure modes.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Observable evidence supporting the benchmark result.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional evaluator notes."
+    },
+    "review_status": {
+      "type": "string",
+      "description": "Review status of the benchmark result.",
+      "enum": [
+        "draft",
+        "reviewed",
+        "validated"
+      ]
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Benchmark result schema version."
+    }
+  },
+  "additionalProperties": false
+}
