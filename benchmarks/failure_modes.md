@@ -1,5 +1,3 @@
-## `benchmarks/failure_modes.md` — v1.0
-
 # Conversational Failure Modes
 
 Behavioral Alignment Data for Conversational Agents
