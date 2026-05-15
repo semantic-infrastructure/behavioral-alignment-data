@@ -1,5 +1,3 @@
-## `benchmarks/smartdigital_baseline.md` — v1.0
-
 # Smart Digital Baseline
 
 Behavioral Alignment Data for Conversational Agents
