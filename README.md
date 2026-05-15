@@ -1,5 +1,3 @@
-## README.md v1.0 
-
 # Behavioral Alignment Data for Conversational Agents
 
 Reference patterns for semantic consistency, contextual robustness, and behavioral alignment evaluation.
