@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/semantic-infrastructure/behavioral-alignment-data/main/schemas/conversation_item.schema.json",
+  "title": "Conversation Item",
+  "description": "Machine-readable conversational reference item for behavioral alignment evaluation.",
+  "type": "object",
+  "required": [
+    "id",
+    "domain",
+    "speaker",
+    "text"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the conversational item.",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Primary conversational evaluation domain.",
+      "enum": [
+        "business_alignment",
+        "ethical_alignment",
+        "interactional_alignment",
+        "semantic_consistency"
+      ]
+    },
+    "speaker": {
+      "type": "string",
+      "description": "Interaction role associated with the utterance.",
+      "enum": [
+        "host",
+        "user",
+        "agent",
+        "system",
+        "annotator"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "description": "Conversational content."
+    },
+    "labels": {
+      "type": "array",
+      "description": "Behavioral or semantic evaluation labels.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "description": "Optional contextual or organizational tags.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "context": {
+      "type": "object",
+      "description": "Optional contextual metadata.",
+      "properties": {
+        "conversation_id": {
+          "type": "string"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scenario": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotation": {
+      "type": "object",
+      "description": "Optional annotation metadata.",
+      "properties": {
+        "annotator": {
+          "type": "string"
+        },
+        "annotation_version": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "reviewed",
+            "validated"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
