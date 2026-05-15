@@ -179,4 +179,19 @@ Changes to schemas, annotation logic, or benchmark definitions should be version
 
 ## License
 
-TBD
+See LICENSE file.
+
+---
+
+## Source Context
+
+Parts of the conversational reference material are structurally derived from publicly accessible discussions and interaction scenarios associated with the Smart Digital series.
+
+The repository reorganizes such material into machine-readable conversational evaluation structures for behavioral alignment analysis.
+
+---
+
+## Reference Context
+
+Related source context:
+https://www.smartdigital.de/
