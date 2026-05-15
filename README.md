@@ -122,6 +122,7 @@ corpus/
 schemas/
   conversation_item.schema.json
   alignment_annotation.schema.json
+  benchmark_result.schema.json
 
 benchmarks/
   failure_modes.md
