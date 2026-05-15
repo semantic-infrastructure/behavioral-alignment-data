@@ -1,5 +1,3 @@
-## `benchmarks/evaluation_rubric.md` — v1.0
-
 # Evaluation Rubric
 
 Behavioral Alignment Data for Conversational Agents
