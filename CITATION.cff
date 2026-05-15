@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+
+title: "Behavioral Alignment Data for Conversational Agents"
+
+message: >
+  If you use this repository for research, benchmarking,
+  or conversational evaluation, please cite it using
+  the metadata provided in this file.
+
+type: dataset
+
+authors:
+  - family-names: "Kossler"
+    given-names: "Meik"
+
+url: "https://github.com/semantic-infrastructure/behavioral-alignment-data"
+
+repository-code: "https://github.com/semantic-infrastructure/behavioral-alignment-data"
+
+repository-artifact: "https://github.com/semantic-infrastructure/behavioral-alignment-data"
+
+abstract: >
+  Structural reference corpus for conversational behavioral alignment,
+  semantic consistency evaluation, contextual robustness analysis,
+  and interactional stability benchmarking.
+
+keywords:
+  - conversational agents
+  - behavioral alignment
+  - semantic consistency
+  - contextual robustness
+  - conversational evaluation
+  - human-machine communication
+  - alignment benchmarking
+
+license: "TBD"
+
+version: "1.0"
+
+date-released: "2026-05-15"
