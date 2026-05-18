@@ -1,24 +1,16 @@
 Behavioral Alignment Data for Conversational Agents
 
-License status: under evaluation.
-
-This repository is currently published for:
+This repository is publicly accessible for:
 
 - structural reference
 - methodological transparency
 - conversational evaluation research
 - machine-readable benchmark documentation
 
-No commercial usage rights are granted at this stage.
+No rights for commercial reuse, model training,
+fine-tuning, benchmark redistribution, or derivative
+dataset publication are granted without explicit permission.
 
-No training, fine-tuning, dataset redistribution,
-or derivative benchmark publication rights are granted
-without explicit permission.
-
-The repository structure, schemas, methodologies,
-annotations, benchmarks, and conversational reference
-materials remain subject to future licensing decisions.
-
-Until a formal license is published, all rights are reserved.
+All rights reserved.
 
 © 2026 Meik Kossler
