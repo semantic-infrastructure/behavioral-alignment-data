@@ -1,5 +1,3 @@
-## `docs/conceptual_framework.md` — v1.0
-
 # Conceptual Framework
 
 Behavioral Alignment Data for Conversational Agents
