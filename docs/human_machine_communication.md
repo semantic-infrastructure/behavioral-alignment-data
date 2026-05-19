@@ -1,5 +1,3 @@
-## `docs/human_machine_communication.md` — v1.0
-
 # Human-Machine Communication
 
 Behavioral Alignment Data for Conversational Agents
