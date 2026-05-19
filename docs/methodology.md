@@ -1,5 +1,3 @@
-## `docs/methodology.md` — v1.0
-
 # Methodology
 
 Behavioral Alignment Data for Conversational Agents
