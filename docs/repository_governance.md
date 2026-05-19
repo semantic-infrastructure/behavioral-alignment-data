@@ -1,5 +1,3 @@
-## `docs/repository_governance.md` — v1.0
-
 # Repository Governance
 
 Behavioral Alignment Data for Conversational Agents
