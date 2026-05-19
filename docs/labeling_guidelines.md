@@ -1,5 +1,3 @@
-## `docs/labeling_guidelines.md` — v1.0
-
 # Labeling Guidelines
 
 Behavioral Alignment Data for Conversational Agents
