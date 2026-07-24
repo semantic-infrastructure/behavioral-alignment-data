@@ -1,0 +1,11 @@
+# Behavioral Alignment Data
+
+Reference dataset for behavioral alignment annotations, benchmark results, and machine-readable evaluation structures.
+
+## Repository
+
+- [Behavioral Alignment Data Repository](https://github.com/semantic-infrastructure/behavioral-alignment-data)
+
+## Purpose
+
+Behavioral Alignment Data provides machine-readable reference datasets for behavioral alignment research, including annotation schemas, benchmark results, evaluation data, and related reference structures.
